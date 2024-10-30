@@ -1,0 +1,260 @@
+
+.container {
+  overflow: hidden;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #0D7C66;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1); /* Cam etkisi için arka plan rengi */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Arka plan bulanıklığı */
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Hafif kenar sınırı */
+  color: #fff; /* Yazı rengi */
+  font-size: 16px;
+}
+
+h1 {
+  margin-top: 0;
+  color: #fff; /* Başlık rengi */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Giriş kutuları için kenar rengi */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2); /* Cam etkisi için arka plan rengi */
+  color: #fff; /* Yazı rengi */
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder yazı rengi */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-bar {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  width: auto;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.output-card {
+  background: rgba(255, 255, 255, 0.1); /* Cam efekti için arka plan rengi */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Arka plan bulanıklığı */
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Hafif kenar sınırı */
+  color: #fff; /* Yazı rengi */
+  max-width: 100%;
+  overflow: auto;
+}
+
+.output-card h3 {
+  margin-top: 0;
+  color: #fff; /* Başlık rengi */
+}
+
+.output-content {
+  white-space: pre-wrap; /* Boşlukları ve yeni satırları korur */
+  word-wrap: break-word; /* Uzun kelimeleri kırar */
+  color: #ddd; /* Çıktı metin rengi */
+}
+
+.cardLogin {
+  background: rgba(255, 255, 255, 0.1); /* Cam efekti için arka plan rengi */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Arka plan bulanıklığı */
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Hafif kenar sınırı */
+  color: #fff;
+}
+
+
+
+.command-form-container {
+  position: relative;
+}
+
+.quick-command-button {
+  position: absolute;
+  top: 1px;
+  right: 500px;
+  padding: 30px 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-command-button:hover {
+  background-color: #0056b3;
+}
+
+
+.device-list-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.device-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.device-table th, .device-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.device-table th {
+  background-color: #f4f4f4;
+}
+
+.device-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.device-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.select-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.select-button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.command-name {
+  font-weight: bold;
+  color: #674636;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.device-command-page {
+  margin-top: 20px; /* Sayfanın üst kısmına boşluk ekleyin */
+  padding: 20px;    /* İçerik etrafında boşluk */
+}
+
+/* CommandDropdown.css */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 200px; /* İsteğe bağlı olarak kutunun yüksekliğini ayarlayın */
+  overflow-y: auto; /* Dikey kaydırma çubuğu ekleyin */
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
